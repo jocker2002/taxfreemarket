@@ -1,0 +1,233 @@
+.profile-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    /*
+    box-shadow: 0 0 7px var(--main-orange);
+    padding: 1.2em;
+    border: 3px solid var(--main-orange);
+    border-radius: 20px;
+    background-color: #fcfafa;
+    */
+}
+
+.profile-sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.category-container {
+    background-color: white;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 100%;
+    height: fit-content;
+    padding: 20px 30px;
+    background-color: white;
+    border: 2px solid var(--main-orange);
+    border-radius: 15px;
+}
+
+.profile-content h1,
+.profile-content h2,
+.profile-content hr {
+    align-self: center;
+    margin: 0;
+}
+
+.profile-content h1 {
+    font-size: 1.5em;
+    width: fit-content;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+}
+
+.profile-content hr {
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 150px;
+    margin-bottom: 0.5em;
+}
+
+.profile-content h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.75em;
+}
+
+.profile-settings {
+    flex-grow: 1;
+}
+
+.profile-settings section {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.2em;
+    font-size: 18px;
+}
+
+.profile-settings section:last-child {
+    margin: 0;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.padding-left {
+    padding-left: 1.2em;
+}
+
+.profile-settings .title {
+    margin-bottom: 0.5em;
+    color: rgb(60, 60, 60);
+    font-weight: 500;
+}
+
+.profile-settings span {
+    color: rgb(114, 114, 114);
+    font-size: 0.8em;
+}
+
+.profile-settings span.padded-span-1 {
+    padding-bottom: 10px;
+}
+
+.profile-settings span.padded-span-2 {
+    padding: 5px 0 10px;
+}
+
+.profile-settings input[type="text"] {
+    width: 100%;
+    padding: 8px 0.75em;
+    font-size: 18px;
+    border: 1.5px solid var(--main-orange);
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.profile-settings .avatar,
+.profile-settings .banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid var(--main-orange);
+    background-color: rgb(250, 250, 250);
+    box-sizing: border-box;
+}
+
+.profile-settings .avatar {
+    width: 120px;
+    height: 120px;
+}
+
+.profile-settings .banner {
+    width: 100%;
+    height: 150px;
+}
+
+.profile-settings .no-image {
+    border: 2px solid var(--main-orange);
+    border-radius: 10px;
+    background: rgb(235, 235, 235) url(/img/no-image.png) no-repeat center;
+    background-size: cover;
+}
+
+.profile-settings .avatar .no-image {
+    width: 60%;
+    height: 50%;
+}
+
+.profile-settings .banner .no-image {
+    width: 74px;
+    height: 62px;
+}
+
+.profile-settings .input-box {
+    border: 1.5px solid var(--main-orange);
+    border-radius: 5px;
+    background-color: rgb(250, 250, 250);
+    padding: 0.5em;
+}
+
+.profile-settings input[type="radio"] {
+    margin: 0;
+}
+
+.profile-settings .radio-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.profile-settings .radio-box label,
+.profile-settings .radio-box input[type="radio"] {
+    cursor: pointer;
+}
+
+.profile-settings .radio-box:last-child {
+    margin: 0;
+}
+
+.profile-settings .radio-box label {
+    /*color: black;*/
+    font-size: 16px;
+}
+
+.profile-settings .radio-box label.center {
+    padding: 0 0.5em;
+}
+
+.profile-settings .radio-box .last {
+    margin-left: 0.5em;
+}
+
+.profile-settings .radio-box input[type="text"] {
+    width: 3.5em;
+    font-size: 15px;
+    padding: 0.3em 0.5em;
+}
+
+.profile-settings select,
+.profile-settings option {
+    background-color: rgb(250, 250, 250);
+}
+
+.profile-settings select {
+    width: 4em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1.5px solid var(--main-orange);
+    cursor: pointer;
+    transition: 80ms;
+}
+
+.profile-settings select:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.profile-settings p {
+    margin: 0;
+}

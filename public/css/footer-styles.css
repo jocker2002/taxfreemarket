@@ -1,0 +1,113 @@
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-top: 2px solid black;
+    background-color: var(--main-orange);
+    color: white;
+    -webkit-text-stroke: black 0.05px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 1.5fr;
+    width: 80%;
+    padding-top: 50px;
+}
+
+.footer-container h4 {
+    margin: 0;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.footer-container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container ul li {
+    list-style-type: none;
+}
+
+.footer-container ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-email {
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.footer-email input {
+    width: 100%;
+    padding: 0 1em;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #fffaf8;
+}
+
+.footer-email input::placeholder {
+    color: #c5c2c1;
+    opacity: 1;
+}
+
+.footer-email button {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-left: 2px solid var(--main-orange);
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.footer-email button svg {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-email button::before,
+.footer-email button:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 7px 7px 0;
+    z-index: auto;
+}
+
+.footer-email button::before {
+    background-color: white;
+}
+
+.footer-email button:hover::after {
+    background-color: rgba(255, 120, 46, 0.075);
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+footer h3 {
+    font-size: 22px;
+    padding: 15px 0;
+    margin: 0;
+}

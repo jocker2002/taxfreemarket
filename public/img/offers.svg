@@ -1,0 +1,83 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1610" height="550" viewBox="0 0 890 520">
+    <defs>
+        <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="60%" style="stop-color:#d55119" />
+            <stop offset="100%" style="stop-color:#ef8237" />
+        </linearGradient>
+        <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="60%" style="stop-color:#1991d6" />
+            <stop offset="100%" style="stop-color:#37bdef" />
+        </linearGradient>
+    </defs>
+    <g fill="#ff782e" font-size="26px" font-weight="bold" font-family="Mulish, sans-serif" dominant-baseline="middle" text-anchor="end">
+        <text x="130" y="250">Online shop for free</text>
+        <circle cx="170" cy="249" r="5px"/>
+        <text x="130" y="300">Best wholesale prices</text>
+        <circle cx="170" cy="299" r="5px"/>
+        <text x="130" y="350">Purchases immediately without VAT</text>
+        <circle cx="170" cy="349" r="5px"/>
+        <text x="130" y="400">Sales channel scaling</text>
+        <circle cx="170" cy="399" r="5px"/>
+        <text x="130" y="450">Automation of work and processes</text>
+        <circle cx="170" cy="449" r="5px"/>
+        <text x="130" y="500">Set your selling price</text>
+        <circle cx="170" cy="499" r="5px"/>
+        <text x="130" y="550">We pay rewards with money or bitcoins</text>
+        <circle cx="170" cy="549" r="5px"/>
+    </g>
+    <g filter="drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5))">
+        <text x="95" y="110" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="36" font-weight="bold" font-family="Mulish, sans-serif" color="red">We offer</text>
+        <g class="cube">
+            <rect x="0" y="17.3" width="190" height="190" fill="#ff782e" />
+            <rect x="190" y="127" width="30" height="190" fill="#e36626" transform="skewY(-30)" />
+            <rect x="30" y="0" width="190" height="17.3" fill="#ef8037" transform="skewX(-60)" />
+            <text x="95" y="110" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="36" font-weight="bold" font-family="Mulish, sans-serif">We offer</text>
+        </g>
+        <g stroke="url(#grad-orange)" class="arrows" >
+            <g id="arc-left" filter="drop-shadow(0 0 2px rgba(0, 0, 0, 0.3))">
+                <path d="M 205 40 C 310 40, 410 75 410 200" stroke-width="20" fill="transparent" id="arc-line" />
+
+                <path d="M 410 199 C 410 325, 310 360 235 360" stroke-width="20" fill="transparent" id="arc-line" />
+
+                <path d="M 190 360 L 230 340 V 380 Z" stroke="transparent" fill="#d55119" transform="translate(10, 0)" />
+            </g>
+            <use href="#arc-left" transform="translate(0,60)" filter="drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5))"/>
+            <use href="#arc-left" transform="translate(0,120)" filter="drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5))"/>
+        </g>
+    </g>
+    <g transform-origin="445 500" transform="rotate(180) scale(1,-1)">
+        <g class="cube" filter="drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5))">
+            <rect x="0" y="17.3" width="190" height="190" fill="#2eb2eb" />
+            <rect x="190" y="127" width="30" height="190" fill="#26a7e3" transform="skewY(-30)" />
+            <rect x="30" y="0" width="190" height="17.3" fill="#37bdef" transform="skewX(-60)" />
+            <text x="-95" y="110" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="36" font-weight="bold" font-family="Mulish, sans-serif" transform="scale(-1,1)">No more</text>
+        </g>
+        <g stroke="url(#grad-blue)" class="arrows">
+            <g id="arc-right" filter="drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5))">
+                <path d="M 205 40 C 310 40, 410 75 410 200" stroke-width="20" fill="transparent" id="arc-line" />
+
+                <path d="M 410 199 C 410 325, 310 360 235 360" stroke-width="20" fill="transparent" id="arc-line" />
+
+                <path d="M 190 360 L 230 340 V 380 Z" stroke="transparent" fill="#1991d6" transform="translate(10, 0)" />
+            </g>
+            <use href="#arc-right" transform="translate(0,60)" filter="drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5))" />
+            <use href="#arc-right" transform="translate(0,120)" filter="drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5))"/>
+        </g>
+    </g>
+    <g fill="#2eb2eb" font-size="26px" font-weight="bold" font-family="Mulish, sans-serif" dominant-baseline="middle" text-anchor="start">
+        <text x="760" y="250">High prices</text>
+        <circle cx="720" cy="249" r="5px"/>
+        <text x="760" y="300">Site development</text>
+        <circle cx="720" cy="299" r="5px"/>
+        <text x="760" y="350">Multiple levels of intermediaries</text>
+        <circle cx="720" cy="349" r="5px"/>
+        <text x="760" y="400">Cross-border purchases with VAT</text>
+        <circle cx="720" cy="399" r="5px"/>
+        <text x="760" y="450">Fake brands</text>
+        <circle cx="720" cy="449" r="5px"/>
+        <text x="760" y="500">Search of sales channels</text>
+        <circle cx="720" cy="499" r="5px"/>
+        <text x="760" y="550">Wasted time looking for the best price</text>
+        <circle cx="720" cy="549" r="5px"/>
+    </g>
+</svg>

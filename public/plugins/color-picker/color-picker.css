@@ -1,0 +1,55 @@
+.color-picker {
+    width: 260px;
+}
+
+.google-color-palette {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin: 2px 3px;
+    transition: 150ms;
+}
+
+.google-color-palette:checked::before {
+    position: absolute;
+    font: 13px/1 "Open Sans", sans-serif;
+    left: 6.5px;
+    top: 2px;
+    content: "\02143";
+    transform: rotate(40deg);
+}
+
+.google-color-palette:hover {
+    box-shadow: 2px 2px 2px grey;
+}
+
+.hidden-col-picker {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.color-pick {
+    margin-top: 20px;
+}
+
+.col-pick-button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.col-pick-button:hover {
+    color: #6d9eeb;
+}

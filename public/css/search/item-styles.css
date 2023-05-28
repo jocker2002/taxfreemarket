@@ -1,0 +1,362 @@
+.item-information {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.image-container {
+    width: fit-content;
+    height: fit-content;
+    margin-left: -2.5px;
+    margin-right: 2em;
+}
+
+.item-details {
+    /*
+    min-width: 100px;
+    max-width: 700px;
+    */
+    position: relative;
+    width: 100%;
+    height: 800px;
+    /*border: 3px solid green;*/
+}
+
+.details-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.details-container-left {
+    width: 441px;
+    height: 630px;
+    /*border: 3px solid red;*/
+}
+
+.details-subcontainer {
+    /*
+    display: grid;
+    grid-template-columns: minmax(100px, 150px) minmax(200px, 1fr);
+    */
+    position: relative;
+    display: flex;
+    column-gap: 1em;
+    /*border: 3px solid blue;*/
+    width: fit-content;
+    flex-grow: 1;
+}
+
+.item-details h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.item-details hr {
+    margin: 1em;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.item-details .labels,
+.item-details .details {
+    /*
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 50px);
+    row-gap: 0.5em;
+    */
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.item-details .labels {
+    width: 120px;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.item-details .labels label {
+    line-height: 50px;
+}
+
+.item-details label:last-child {
+    margin: 0;
+}
+
+.item-details .details {
+    align-items: flex-start;
+    width: 300px;
+}
+
+.item-details .details>* {
+    text-align: left;
+}
+
+.item-details .details span {
+    font-weight: bold;
+}
+
+.item-details .labels label,
+.item-details .details>* {
+    width: 100%;
+    margin-bottom: 0.5em;
+    line-height: 50px;
+}
+
+.item-details .labels label:last-child,
+.item-details .details *:last-child {
+    margin: 0;
+}
+
+.item-details select {
+    background-color: white;
+    padding: 10px;
+    height: 2.5em;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.item-details #quantity {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item-details #quantity input {
+    width: 3em;
+    padding: 5px 10px;
+    margin: 0 0.75em;
+    font-size: 20px;
+    border: 1.5px solid black;
+    outline: none;
+    border-radius: 5px;
+}
+
+.item-details #quantity .round-btn {
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.item-details #quantity .round-btn::before,
+.item-details #quantity .round-btn:hover::after {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.item-details #quantity #minus-sign:before,
+.item-details #quantity #minus-sign:hover::after {
+    content: "–";
+}
+
+.item-details #quantity #plus-sign::before,
+.item-details #quantity #plus-sign:hover::after {
+    content: "+";
+}
+
+.active-btn {
+    color: black;
+}
+
+.active-btn::before {
+    background-color: #e9e7e7;
+}
+
+.active-btn:hover::after {
+    background-color: gainsboro;
+}
+
+.disabled-btn::before,
+.disabled-btn:hover::after {
+    background-color: #f2f2f2;
+    color: #d1d1d1;
+    pointer-events: none;
+}
+
+.item-details .labels label[for="price"] {
+    /*color: #13465c;*/
+    color: var(--main-orange);
+    font-size: 1.1em;
+}
+
+.item-details .details #price {
+    color: var(--main-orange);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.item-details .details #price-wholesale,
+.item-details .details #price-wholesale button {
+    height: 100%;
+    width: fit-content;
+}
+
+.item-details .details #price-wholesale button {
+    background-color: var(--main-orange);
+    border: 3px solid transparent;
+    border-radius: 30px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0 1em;
+    transition: 80ms;
+    cursor: pointer;
+}
+
+.item-details .labels label[for="price-wholesale"] {
+    color: var(--main-orange);
+    font-size: 1.1em;
+}
+
+.item-details #price-wholesale span {
+    color: var(--main-orange);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.item-description {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid gray;
+    z-index: 2;
+    background-color: white;
+    width: 400px;
+    left: 410px;
+    bottom: 200px;
+}
+
+.desc-header {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.item-description ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.item-description ul li {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.item-description ul li:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+.item-details .button-rounded {
+    width: 250px;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-width: 3px;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.buttons #message-box {
+    position: relative;
+    display: none;
+    margin-top: 15px;
+    padding: 10px 20px;
+    width: 355px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.buttons #message-box.success {
+    color: green;
+    border: 2px solid green;
+    background-color: #e0ffe9;
+}
+
+.buttons #message-box.warning {
+    color: #B58B00;
+    border: 2px solid #B58B00;
+    background-color: #ffffe0;
+}
+
+.buttons #message-box.error {
+    color: red;
+    border: 2px solid red;
+    background-color: #ffe2e0;
+}
+
+.details-container-right {
+    margin-left: 30px;
+}
+
+#description {
+    font-size: 20px;
+    width: 400px;
+    height: 100%;
+}
+
+#description .pdbDescContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--main-orange);
+    background-color: white;
+    height: fit-content;
+}
+
+#description .pdbDescContainer .pdbDescSection {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 15px;
+}
+
+#description .pdbDescContainer .pdbDescSection:nth-child(odd) {
+    background-color: #ffedca;
+}
+
+.pdbDescSectionTitle {
+    margin-right: 10px;
+}
+
+.pdbDescSectionText {
+    font-weight: bold;
+}
+
+.pdbDescSectionItem {
+    font-size: 18px;
+}
+
+.pdbDescSectionItem::after {
+    content: ", ";
+}
+
+.pdbDescSectionItem:last-child::after {
+    content: ""
+}

@@ -1,0 +1,83 @@
+:root {
+    --main-orange: #ff782e;
+    --main-blue: #2eb2eb;
+    --main-green: #25dd25;
+}
+
+.button-background {
+    cursor: pointer;
+}
+
+button.button-background {
+    background: transparent;
+}
+
+.button-background::after {
+    transition: 100ms;
+}
+
+.button-background::before,
+.button-background::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.button-white::before {
+    background-color: #eeeeee;
+}
+
+.button-orange::before {
+    background-color: var(--main-orange);
+}
+
+.button-blue::before {
+    background-color: var(--main-blue);
+}
+
+.button-green::before {
+    background-color: var(--main-green);
+}
+
+.button-hover-black:hover::after {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.button-hover-semiorange:hover::after {
+    background-color: rgba(255, 120, 46, 0.075);
+}
+
+.button-rounded {
+    border: none;
+    background-color: var(--main-orange);
+    color: white;
+    border-radius: 40px;
+    border: solid transparent;
+    font-weight: bold;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.button-rounded:hover {
+    border: solid var(--main-orange);
+    color: var(--main-orange) !important;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.btn-r-default {
+    padding: 18px 110px;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.btn-r-default,
+.btn-r-default:hover {
+    border-width: 5px;
+}

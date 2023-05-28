@@ -1,0 +1,122 @@
+:root {
+    --main-color: green;
+}
+
+body {}
+
+.store-catalog-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.store-catalog-filter .filter-field {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.store-catalog-filter .filter-field:last-child {
+    margin-right: 0;
+}
+
+.store-catalog-filter .filter-field select {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 0 0.5em;
+    border-radius: 4px;
+    background: #f4f4f6;
+}
+
+/* --- CATALOG STYLES --- */
+
+.store-catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(6, minmax(350px, 400px));
+    column-gap: 20px;
+    row-gap: 25px;
+    width: auto;
+}
+
+.store-catalog .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fffbf9;
+    border: 3px solid var(--main-orange);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: -3px 3px 5px gray;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.store-catalog .item * {
+    display: block;
+}
+
+.store-catalog .item:hover {
+    box-shadow: -3px 3px 10px gray;
+}
+
+.store-catalog .item .image {
+    width: auto;
+    height: 50%;
+    border: 1px solid rgba(220, 220, 220, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 1em;
+    background-color: white;
+}
+
+.store-catalog .item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.store-catalog .item .item-title {
+    transition: 80ms;
+    margin: 0 0 1em 0;
+}
+
+.store-catalog .item .item-title:hover {
+    color: var(--main-orange);
+}
+
+.store-catalog .item .price-retail {
+    margin-bottom: 1em;
+    font-size: large;
+}
+
+.store-catalog .item .price-retail .price-value {
+    display: inline;
+    color: var(--main-blue);
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 0.5em;
+}
+
+.store-catalog .item .price-wholesale {
+    background-color: var(--main-orange);
+    border: 3px solid transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    transition: 80ms;
+    cursor: pointer;
+}
+
+.store-catalog .item .price-wholesale:hover {
+    border: 3px solid var(--main-orange);
+    color: var(--main-orange);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* --- CATALOG STYLES --- */

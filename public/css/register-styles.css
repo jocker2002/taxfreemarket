@@ -1,0 +1,186 @@
+.register-window {
+    position: relative;
+    width: 80%;
+    border-radius: 20px;
+    border: 3px solid var(--main-orange);
+    margin: auto;
+    transition: 400ms;
+}
+
+.register-nav {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+    border-bottom: 5px solid #d6d6d6;
+}
+
+.register-nav button {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0.5em 0;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-retailer {
+    background-color: #d5f2ff;
+    color: rgb(63, 153, 189);
+    border-radius: 17px 0 0 0;
+}
+
+.nav-brand {
+    background-color: #d5ffd5;
+    color: rgb(6, 160, 6);
+    border-radius: 0 17px 0 0;
+}
+
+.register-active {
+    background-color: #ffeadd;
+    color: var(--main-orange);
+}
+
+.register-slider {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 5px;
+    background-color: var(--main-orange);
+}
+
+.register-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0 0 17px 17px;
+    margin: auto;
+    padding: 30px;
+}
+
+.register-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.background-physical-retailer::before {
+    background-image: url("/img/background-regular-shopper.jpg");
+    background-position: 0 52%;
+}
+
+.background-juridic-retailer::before {
+    background-image: url("/img/background-retalier.jpg");
+    background-position: center;
+}
+
+.background-brand::before {
+    background-image: url("/img/background-brand.jpg");
+    background-position: center;
+}
+
+.register-container * {
+    position: relative;
+}
+
+.section-title {
+    margin: 0;
+    color: black;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    margin-top: 0.2em;
+    font-weight: 600;
+}
+
+.section-title,
+.section-subtitle {
+    text-align: center;
+}
+
+.title-underscore {
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 10px;
+    width: 200px;
+    margin: 1em auto;
+}
+
+.form-container {
+    width: 70%;
+    max-width: 100%;
+}
+
+.form-container form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    row-gap: 25px;
+    column-gap: 35px;
+}
+
+.form-container input,
+.form-container button {
+    font-size: 20px;
+    width: 100%;
+    height: clamp(40px, 55px, 60px);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.form-container input {
+    background-color: #fffaf8;
+    border: 2.5px solid var(--main-orange);
+    padding: 0 1em;
+}
+
+.form-container button {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5em;
+}
+
+.form-container button,
+.form-container button:before {
+    border-radius: 10px;
+}
+
+.form-container button,
+.checkbox-container,
+.form-juridic-retailer,
+.form-juridic-retailer input[name="name-of-store"] {
+    grid-column: span 2;
+}
+
+#form-juridic-retailer,
+#form-brand {
+    display: none;
+}
+
+.form-juridic-retailer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    row-gap: 25px;
+    column-gap: 35px;
+}

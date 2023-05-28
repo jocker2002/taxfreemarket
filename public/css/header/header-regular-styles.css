@@ -1,0 +1,19 @@
+.header {
+    background-color: white;
+    border-bottom: 2px solid var(--main-orange);
+    box-shadow: 0 2px 0.5em rgba(255, 128, 46, 0.2);
+    z-index: 1;
+}
+
+.search-input::placeholder {
+    color: black;
+}
+
+.categories {
+    background-color: rgba(220, 220, 220, 0.45);
+}
+
+.search-input,
+.categories ul li a {
+    color: black;
+}
